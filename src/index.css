@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ✅ Global mobile responsiveness fixes */
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+}
+
+/* Better scrolling on mobile */
+body {
+  -webkit-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+}
+
+/* Media should never overflow */
+img,
+video,
+canvas,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Long text safety (prevents overflow) */
+* {
+  min-width: 0;
+}
+
+/* Inputs should not zoom on iOS if font < 16px */
+input,
+select,
+textarea,
+button {
+  font-size: 16px;
+}
